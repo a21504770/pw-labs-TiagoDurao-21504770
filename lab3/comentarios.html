@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="utf-8">
-        <title>
-            Londres-Quizz
-        </title>
-    </head>
-    <body style ="background-color:wheat ;">
-        
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Londres-Comentários
+    </title>
+</head>
+
+<body style="background-color:wheat ;">
+    <h1>Londres</h1>
+    <img src="./img/Londres.jpg" alt="Londres">
+    <br>
+    <a href="./index.html">Introdução</a>
+    <a href="./local.html">Localizacao </a>
+    <a href="./multimedia.html">Multimedia </a>
+    <a href="./informacao.html">Informacao </a>
+    <a href="./quizz.html">Quizz</a>
+    <b><a href="./comentarios.html">Comentários</a></b>
+    <a href="../index.html">Home </a>
+    <hr>
+    <h3>Comentários</h3>
+    <form action="/action_page.php" autocomplete="on" method="POST" action="mailto:tiagod1988@gmail.com">
+        <fieldset>
+            <legend>Comentários</legend>
+            <form>
+                <label for="clareza">Acha que o site é compreensível?</label><br>
+                <input type="radio" id="clareza1" name="clareza" value="Nada">
+                <label for="clareza1">Nada</label>
+                <input type="radio" id="clareza2" name="clareza" value="Pouco">
+                <label for="clareza2">Pouco</label>
+                <input type="radio" id="clareza3" name="clareza" value="Razoável">
+                <label for="clareza3">Razoável</label>
+                <input type="radio" id="clareza4" name="clareza" value="Muito">
+                <label for="clareza4">Muito</label><br>
+            </form><br>
+            <form>
+                <label for="rigoroso">Acha que o site rigoroso/verdadeiro?</label><br>
+                <input type="radio" id="rigoroso1" name="rigoroso" value="Nada">
+                <label for="rigoroso1">Nada</label>
+                <input type="radio" id="rigoroso2" name="rigoroso" value="Pouco">
+                <label for="rigoroso2">Pouco</label>
+                <input type="radio" id="rigoroso3" name="rigoroso" value="Razoável">
+                <label for="rigoroso3">Razoável</label>
+                <input type="radio" id="rigoroso4" name="rigoroso" value="Muito">
+                <label for="rigoroso4">Muito</label>
+            </form><br>
+            <form>
+                <label for="Precisão">Acha o site preciso?</label><br>
+                <input type="radio" id="preciso1" name="preciso" value="Nada">
+                <label for="preciso1">Nada</label>
+                <input type="radio" id="preciso2" name="preciso" value="Pouco">
+                <label for="preciso2">Pouco</label>
+                <input type="radio" id="preciso3" name="preciso" value="Razoável">
+                <label for="preciso3">Razoável</label>
+                <input type="radio" id="preciso4" name="preciso" value="Muito">
+                <label for="preciso4">Muito</label>
+            </form><br>
+            <form>
+                <label for="profundidade">Entre 0 a 5 qual é para si a profundidade do site?</label><br>
+                <input type="range" id="profundidade" name="profundidade" min="0" max="5" value="0" oninput="profundidadeValor.value=parseInt(value)">
+                <output name="profundidadeValor" for="profundidade">0</output> valor
+            </form><br>
+            <form>
+                <label for="amplitude">Entre 0 a 5 qual é para si a amplitude do conteúdo do site?</label><br>
+                <input type="range" id="amplitude" name="amplitude" min="0" max="5" value="0" oninput="amplitudeValor.value=parseInt(value)">
+                <output name="amplitudeValor" for="amplitude">0</output> valor
+            </form><br>
+            <form>
+                <label for="lógica">Entre 0 a 5 o site e o seu conteúdo tem lógica?</label><br>
+                <input type="range" id="logica" name="logica" min="0" max="5" value="0" oninput="logicaValor.value=parseInt(value)">
+                <output name="logicaValor" for="logica">0</output> valor
+            </form><br>
+            <form>
+                <label for="significancia">Entre 0 a 5 o site é focado no importante?</label><br>
+                <input type="range" id="significancia" name="significancia" min="0" max="5" value="0" oninput="significanciaValor.value=parseInt(value)">
+                <output name="significanciaValor" for="significancia">0</output> valor
+            </form><br>
+            <form>
+                <label for="originalidade">Quais destes atributos identifica no site?</label><br>
+                <input type="checkbox" id="originalidade1" name="originalidade" value="Criativo">
+                <label for="originalidade1">Criativo</label>
+                <input type="checkbox" id="originalidade2" name="originalidade" value="Importante">
+                <label for="originalidade">Importante</label>
+                <input type="checkbox" id="originalidade3" name="originalidade" value="Original">
+                <label for="originalidade3">Original</label>
+                <input type="checkbox" id="originalidade4" name="originalidade" value="Imparcial">
+                <label for="originalidade4">Imparcial</label>
+                <input type="checkbox" id="originalidade5" name="originalidade" value="Focado">
+                <label for="originalidade5">Focado</label>
+                <input type="checkbox" id="originalidade6" name="originalidade" value="Inovador">
+                <label for="originalidade6">Inovador</label><br>
+            </form><br>
+            <form>
+                <textarea name="comentario" rows="10" cols="30">Deixe os seus comentários</textarea>
+            </form>
+        </fieldset>
+        <input type="submit" value="submit" onclick="msg()">
+    </form>
+    <script>
+        function msg(){
+            alert("Obrigado pelos seus comentários");
+        }
+    </script>
+
+</body>
+
 </html>
