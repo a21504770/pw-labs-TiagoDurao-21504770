@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Londres-Quizz
+    </title>
+</head>
+
+<body style="background-color:wheat ;">
+    <h1>Londres</h1>
+    <img src="./img/Londres.jpg" alt="Londres">
+    <br>
+    <a href="./index.html">Introdução</a>
+    <a href="./local.html">Localizacao </a>
+    <a href="./multimedia.html">Multimedia </a>
+    <a href="./informacao.html">Informacao </a>
+    <b><a href="./quizz.html">Quizz</a></b>
+    <a href="./comentarios.html">Comentários</a>
+    <a href="./html5-css.html">html5</a>
+    <a href="../index.html">Home </a>
+    <hr>
+    <h3>Quizz</h3>
+
+    <form action="/action_page.php" autocomplete="on" method="POST" action="mailto:tiagod1988@gmail.com">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="fname">Primeiro nome:</label>
+            <input type="text" id="fname" name="fname" placeholder="Nome" autocomplete="name" autofocus><br>
+            <label for="lname">Último nome:</label>
+            <input type="text" id="lname" name="lname" placeholder="Apelido"><br>
+            <label for="dataNascimento">Data Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" placeholder="DD/MM/AAAA"
+                autocomplete="off"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Quiz</legend>
+            <form>
+                <label for="museus">Quais destes museus se encontram em Londres?</label><br>
+                <input type="checkbox" id="museus" name="museus" value="british">
+                <label for="museu1">Museu Britanico</label>
+                <input type="checkbox" id="museus" name="museus" value="louvre">
+                <label for="museu2">Museu do Louvre</label>
+                <input type="checkbox" id="museus" name="museus" value="tate">
+                <label for="museu3">Tate Museu</label>
+                <input type="checkbox" id="museus" name="museus" value="Coches">
+                <label for="museu4">Museu dos Coches</label>
+                <input type="checkbox" id="museus" name="museus" value="National">
+                <label for="museu5">National Gallery</label><br>
+            </form><br>
+            <form>
+                <label for="roda">Como se chama a Roda Gigante em Londres?</label><br>
+                <input type="radio" id="roda" name="nomeroda" value="London eye">
+                <label for="roda1">London eye</label>
+                <input type="radio" id="roda" name="nomeroda" value="Big Wheel">
+                <label for="roda2">Big wheel</label>
+                <input type="radio" id="roda" name="nomeroda" value="London Wheel">
+                <label for="roda3">London wheel</label>
+            </form><br>
+            <form>
+                <label for="politica">Que tipo de politica é exercida em Inglaterra?</label><br>
+                <input type="radio" id="politica" name="politica" value="Democracia">
+                <label for="politica1">Democracia</label>
+                <input type="radio" id="politica" name="politica" value="Ditadura">
+                <label for="politica2">Ditadura</label>
+                <input type="radio" id="politica" name="politica" value="Monarquia Parlamentar">
+                <label for="politica3">Monarquia Parlamentar</label>
+            </form><br>
+            <form>
+                <label for="bandeiraQuantCores">Quantas são as cores da bandeira do Reino Unido?</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+            </form><br>
+            <form>
+                <label for="favcolor">Quais são as cores da bandeira do Reino Unido?</label><br>
+                <input type="color" id="favcolor" name="color1">
+                <input type="color" id="favcolor" name="color2">
+                <input type="color" id="favcolor" name="color3">
+            </form><br>
+            <form>
+                <label for="queenNome">Como se chama a Rainha de Inglaterra?</label><br>
+                <input type="text" id="queenName" name="queenName" placeholder="Nome Rainha" maxlength="30"><br>
+            </form><br>
+            <form>
+                <label for="habitacao">Onde vive a familia Real?</label><br>
+                <input type="radio" id="habitacao1" name="habitacao" value="Palácio de Versalhes">
+                <label for="habitacao1">Palácio de Versalhes</label>
+                <input type="radio" id="habitacao2" name="habitacao" value="Palácio de Buckingam">
+                <label for="habitacao2">Palácio de Buckingam</label>
+                <input type="radio" id="habitacao3" name="habitacao" value="Palácio de Eitham">
+                <label for="habitacao3">Palácio de Eitham</label>
+            </form><br>
+            <form>
+                <label for="relogio">Qual é a imagem do famoso monumento Big Ben em Londres?</label><br>
+                <div class="selecte-sim" id="select-relogio">
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="option" value="bigBen" id="bigBen" checked />
+                            <label for="bigBen">
+                                <img src="./img/big-ben-quizz.jpeg" alt="" />
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="option" value="bridge" id="bridge" />
+                            <label for="bridge">
+                                <img src="./img/bridge - quizz.jpg" alt="" />
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="option" value="londonEye" id="londonEye" />
+                            <label for="londonEye">
+                                <img src="./img/London-Eye-quizz.JPG" alt="" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form><br>
+            <br>
+            <form>
+                <label for="visitar">De 0 a 5 gostaria de voltar ou visitar Londres?</label><br>
+                <input type="range" id="visitar" name="visitar" min="0" max="5" value="0"
+                    oninput="visitarValor.value = parseInt(value)">
+                <output name="visitarValor" for="visitar">0</output> valor
+            </form><br>
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
